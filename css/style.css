@@ -1,0 +1,96 @@
+*
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+header{
+   
+    color: #fff!important;
+    
+}
+header nav{
+    background-color: #000000;
+}
+header .nav-link,.navbar-brand  {
+    color: #fff!important;
+}
+
+.navbar-brand{
+    font-size: 1.5em;
+    letter-spacing: 2px;
+   
+}
+
+.navbar-brand span{
+    color: #8E05C2;
+}
+
+header .nav-item a:hover{
+    color:#8E05C2!important;
+}
+
+
+
+.hire-me{
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+ 
+    background-color:#3E065F;
+    border-radius: 5px;
+}
+
+.banner{
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 80vh;
+}
+
+.banner p {
+    font-size: 1.7em;
+
+}
+.content-banner{
+    margin-top: 3%;
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.banner p span{
+    color: #bf44f0;
+}
+
+.nav-link {
+    color: white;
+    cursor: pointer;
+    position: relative;
+    text-transform: capitalize;
+}
+
+ .navbar-collapse  .nav-link::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    transition: all 0.7s ease;
+    width: 0;
+    bottom: 2px;
+
+}
+
+
+
+.navbar-collapse .nav-link:hover::before{
+    border-bottom: 3px solid white;
+
+    width: 100%;
+    transition: width 0.3s; 
+
+}
+
+
+
