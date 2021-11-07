@@ -31,18 +31,20 @@ var mixer = mixitup(config, {
 
 var scrollToTopBtn = document.getElementById("scrollToTopBtn");
 var rootElement = document.documentElement;
-
+const nav =document.getElementById('nav')
 const progress= document.querySelectorAll('.progress-bar')
-window.onscroll = function() {scrollFunction()};
-window.onscroll =function () {animateSkills()}
+window.onscroll = function() {scrollFunction(),animateSkills()};
+
 
 function scrollFunction() {
-  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-  
+  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+
     scrollToTopBtn.style.display = "block";
-    
+
+    nav.classList.add('scroll')
   } else {
     scrollToTopBtn.style.display = "none";
+    nav.classList.remove('scroll')
   }
 }
 
@@ -82,6 +84,22 @@ btn.addEventListener('click',function (e) {
 })
 
 
+
+var links =document.querySelectorAll('.links-nav a')
+
+links.forEach(element => {
+  element.addEventListener('click',function(e){
+    links.forEach(element => {
+      
+    element.classList.remove('active')
+    });
+      e.currentTarget.classList.add('active')
+
+    
+
+  })
+
+});
 
 
 

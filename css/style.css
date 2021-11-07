@@ -49,7 +49,18 @@ header{
 }
 header nav{
     background-color: #000000;
+    transition: 1s;
 }
+
+.nav-animate{
+    transition: 0.7s;
+}
+.scroll{
+    width: 90%!important;
+    margin: auto;
+  
+}
+
 header .nav-link,.navbar-brand  {
     color: #fff!important;
 }
@@ -68,6 +79,10 @@ header .nav-item a:hover{
     color:#048b9a!important;
 }
 
+.nav-link.active{
+    color: #048b9a!important;
+    background: #fff;
+}
 
 
 .hire-me{
@@ -203,7 +218,7 @@ header .nav-item a:hover{
 .progress-bar{
     background-color: rgb(37, 165, 11);
     border: 1px solid;
-    transition: 1.5s;
+    transition: 2s;
 }
 
 
