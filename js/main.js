@@ -43,3 +43,26 @@ function scrollFunction() {
     scrollToTopBtn.style.display = "none";
   }
 }
+
+
+const btn =document.getElementById('submit')
+const username= document.getElementById('name')
+const mail =document.getElementById('mail')
+const subject =document.getElementById('subject')
+const body =document.getElementById('body')
+btn.addEventListener('click',function (e) {
+  e.preventDefault();
+
+  Email.send({
+    Host:"smtp.mailtrap.io",
+    Username:"3dc45afde0390c",
+    Password:"456c62c15141f0",
+    To:"mohamedbenhamza90@gmail.com",
+    From:mail.value,
+
+    Subject : subject.value,
+     Body : username.value +'<br>' +  mail.value +"<br> " +subject.value +'<br>' + body.value  + "<br>"  
+  }).then(
+    message => alert(message)
+  )
+})
