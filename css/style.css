@@ -203,99 +203,64 @@ header .nav-item a:hover{
 .progress-bar{
     background-color: rgb(37, 165, 11);
     border: 1px solid;
+    transition: 1.5s;
 }
+
 
 .html{
  
     animation:  html  2s ;
     animation-direction: alternate;
     animation-fill-mode: forwards;
-    animation-delay: 4s ;
+    
     
 }
 
-@keyframes html {
-    0%{
-        
-        width: 0;
-
-    }
-    100% {
-        width: 95%;
-       
-    }
-}
 .css{
     animation:  css 2s;
     animation-direction: alternate;
     animation-fill-mode: forwards;
-    animation-delay: 4s
+    
     
 }
 
-@keyframes css {
-    0%{
-        width: 0;
-    }
-    100% {
-        width: 85%;
-    }
-}
+
 
 
 .js{
     animation:  js 2s;
+
     animation-direction: alternate;
     animation-fill-mode: forwards;
-    animation-delay: 4s
+    
     
 }
 
-@keyframes js {
-    0%{
-        width: 0;
-    }
-    100% {
-        width: 80%;
-    }
-}
+
 
 
 .php{
     animation:  php 2s;
-    
     animation-direction: alternate;
     animation-fill-mode: forwards;
-    animation-delay: 4s
+    
+
+
     
 }
 
-@keyframes php {
-    0%{
-        width: 0;
-    }
-    100% {
-        width: 90%;
-    }
-}
+
 
 
 .wp{
     animation:  wp 2s;
     animation-direction: alternate;
     animation-fill-mode: forwards;
-    animation-delay: 4s
+    
     
 }
 
-@keyframes wp {
-    0%{
-        width: 0;
-    }
-    100% {
-        width: 90%;
-    }
-}
+
 
 .description-skills p{
     line-height: 3;

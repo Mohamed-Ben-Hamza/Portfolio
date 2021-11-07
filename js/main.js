@@ -32,7 +32,9 @@ var mixer = mixitup(config, {
 var scrollToTopBtn = document.getElementById("scrollToTopBtn");
 var rootElement = document.documentElement;
 
+const progress= document.querySelectorAll('.progress-bar')
 window.onscroll = function() {scrollFunction()};
+window.onscroll =function () {animateSkills()}
 
 function scrollFunction() {
   if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
@@ -41,6 +43,18 @@ function scrollFunction() {
     
   } else {
     scrollToTopBtn.style.display = "none";
+  }
+}
+
+function animateSkills(){
+  if (document.body.scrollTop > 1700 || document.documentElement.scrollTop > 1700) {
+  
+    progress.forEach(element => {
+      element.style.width=element.dataset.progres +"%"
+    });
+    
+  } else {
+    
   }
 }
 
@@ -66,3 +80,9 @@ btn.addEventListener('click',function (e) {
     message => alert(message)
   )
 })
+
+
+
+
+
+
