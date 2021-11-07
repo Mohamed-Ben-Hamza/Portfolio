@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 *
 {
 margin: 0;
@@ -5,9 +6,45 @@ padding: 0;
 box-sizing: border-box;
 }
 
+body{
+    background-color: #f6f6f6;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#scrollToTopBtn {
+    position: fixed;
+    right: 2%;
+    bottom: 1%;
+    background-color: #048b9a;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    height: 40px;
+    width: 40px;
+    display: none;
+    border-radius: 3px;
+    text-decoration: none;
+  
+  }
+  #scrollToTopBtn i {
+      display: block;
+      margin-top: 5px;
+      text-align: center;
+      font-size: 1.5em;
+  }
+  h3{
+    font-family: "Ubuntu",sans-serif;
+  }
+
+/* start header */
 header{
    
     color: #fff!important;
+    font-family:'Ubuntu',sans-serif ;
     
 }
 header nav{
@@ -24,11 +61,11 @@ header .nav-link,.navbar-brand  {
 }
 
 .navbar-brand span{
-    color: #8E05C2;
+    color: #048b9a;
 }
 
 header .nav-item a:hover{
-    color:#8E05C2!important;
+    color:#048b9a!important;
 }
 
 
@@ -38,7 +75,7 @@ header .nav-item a:hover{
     text-transform: capitalize;
     letter-spacing: 2px;
  
-    background-color:#3E065F;
+    background-color:#048b9a;
     border-radius: 5px;
 }
 
@@ -46,7 +83,8 @@ header .nav-item a:hover{
     background-image: url(../img/banner.jpg);
     background-size: cover;
     background-attachment: fixed;
-    height: 80vh;
+    height: 600px;
+    font-family:'Ubuntu',sans-serif ;
 }
 
 .banner p {
@@ -61,7 +99,7 @@ header .nav-item a:hover{
     flex-direction: column;
 }
 .banner p span{
-    color: #bf44f0;
+    color: #048b9a;
 }
 
 .nav-link {
@@ -91,6 +129,464 @@ header .nav-item a:hover{
     transition: width 0.3s; 
 
 }
+/* end header */
+
+/* start main */
+
+/* section about me */
+#aboutme,#services,#skills,#contact,footer{
+    font-family: "Poppins",sans-serif;
+}
+.title-section{
+    font-family: "Ubuntu",sans-serif;
+    text-align: center ;
+    margin: 2% 0;
+    text-transform: capitalize;
+}
+.cv-img{
+ width: 50%;
+ 
+}
+.about-me p {
+    line-height: 2.2!important;
+}
+.about-me .cv{
+    width: 25%;
+    text-align: center;
+    background: #048b9a;
+    border-radius: 4px;
+    transition: 0.7s;
+    border:1px solid #048b9a;
+}
+.about-me .cv:hover{
+    color: #048b9a;
+    background: #fff;
+   
+}
+
+/* end about me */
 
 
 
+/* section services articles */
+
+.article-service{
+    background: #000000;
+    
+    color: #fff;
+    border-radius: 6px;
+    transition: 0.5s;
+}
+
+.article-service:hover{
+    transform: translateY(-40px);
+}
+
+.article-service:hover i {
+    color: #048b9a;
+}
+
+.article-service div i {
+    font-size: 2.5em;
+    transition: 0.7s;
+}
+
+
+
+
+
+/* end section services articles  */
+
+
+/* sklils section */
+
+.progress-bar{
+    background-color: rgb(37, 165, 11);
+    border: 1px solid;
+}
+
+.html{
+ 
+    animation:  html  2s ;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-delay: 4s ;
+    
+}
+
+@keyframes html {
+    0%{
+        
+        width: 0;
+
+    }
+    100% {
+        width: 95%;
+       
+    }
+}
+.css{
+    animation:  css 2s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-delay: 4s
+    
+}
+
+@keyframes css {
+    0%{
+        width: 0;
+    }
+    100% {
+        width: 85%;
+    }
+}
+
+
+.js{
+    animation:  js 2s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-delay: 4s
+    
+}
+
+@keyframes js {
+    0%{
+        width: 0;
+    }
+    100% {
+        width: 80%;
+    }
+}
+
+
+.php{
+    animation:  php 2s;
+    
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-delay: 4s
+    
+}
+
+@keyframes php {
+    0%{
+        width: 0;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+
+.wp{
+    animation:  wp 2s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-delay: 4s
+    
+}
+
+@keyframes wp {
+    0%{
+        width: 0;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+.description-skills p{
+    line-height: 3;
+}
+.btn{
+    background-color: #048b9a;
+    color: #fff;
+    transition: 0.8s;
+}
+
+.btn:hover{
+color: #048b9a;
+background: #fff;
+    border:  1px solid #048b9a;
+}
+
+/* end skills section */
+
+/* section projects */
+.img-projects{
+    width: 100%;
+}
+
+
+.button-filter{
+    text-align: center;
+}
+
+.filter {
+    background:#048b9a;
+    border: 0;
+    color: #fff;
+    padding: 1% 2%;
+    margin: 0 2%;
+  
+    }
+    .filter:focus{
+        outline: 0;
+    } 
+
+.pics{
+    margin-top:3%;
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+
+
+.contenu{position: relative;}
+
+.mix img{
+    display: block;
+    width: 100%;
+    transition: all 0.5s;
+    
+    overflow: hidden;
+}
+.mix{
+  
+
+    
+    width: 30%;
+    overflow: hidden;
+    
+    margin:  10px;
+}
+
+.overlay{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    position: absolute;
+    transition: all 1s ease;
+    opacity: 0;
+    background: #eee; 
+}
+
+
+.txt-left{
+    color: white;
+    width: 100%;
+    font-size: 1.5em;
+    text-align: center;
+}
+.overlayLeft{
+    height: 100%;
+    width: 0;
+    top: 0%;
+    left: 0;
+    background: #048b9a; 
+    
+}
+.contenu:hover .overlayLeft{
+    width: 100%;
+}
+
+.contenu:hover   img{
+    transform: scale(1.3) ;
+}
+
+
+.contenu:hover .overlay{
+    opacity: 0.8;
+}
+    
+.overlay-icons{
+    display: flex;
+    
+   text-align: center;
+}
+
+.block-icon{
+
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 0 5px;
+
+}
+.block-icon a{
+    text-decoration: none;
+}
+.block-icon a i {
+    font-size: 1.7em;
+    display: block;
+    
+    padding: 10px 0;
+    
+    
+}
+
+.contact-icons {
+    font-size: 1.5em;
+    color: #048b9a;
+}
+
+/*  end section */
+
+
+
+
+/* contact section */
+
+
+form input,textarea{
+    border-radius: 4px ;
+    outline: none;
+    border: 1px solid #000000;
+}
+
+form button{
+    width: 30%;
+    border-radius: 2px ;
+    padding: 8px 5px;
+    outline: none;
+    border: 0;
+    background-color: #048b9a;
+    color: #fff;
+}
+
+textarea{
+    resize: none;
+}
+
+/* end section */
+
+footer{
+    background-color: #000000;
+    color: #fff;
+}
+
+footer a i {
+    color: #fff;
+    font-size: 2em;
+}
+
+
+@media screen and (min-width:768px) and (max-width:1023px){
+    .mix{
+        width: 50%;
+        margin: auto;
+    }
+    .contact{
+        text-align: center;
+    }
+
+    .info-contact{
+        text-align: center;
+    }
+
+    footer{
+        text-align: center;
+    }
+    .contact{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .center-contact{
+        align-self: center;
+    }
+
+    .about-me .cv{
+        width: 80%;
+        margin: auto;
+    }
+
+    .article-service:hover{
+        transform: translateY(-10px);
+    }
+
+    .mix{
+        width: 45%;
+        margin: 3px;
+    }
+    form{
+        width: 80%;
+        margin: auto;
+    }
+
+    form button{
+        width: 50%;
+        margin: auto;
+        
+    }
+    
+    }
+    
+    @media screen and (max-width:767px) {
+  
+        .details{
+            text-align: center;
+        }
+        .article-service:hover{
+            transform: translateY(-10px);
+        }
+        .mix{
+
+            margin: 1% auto;
+            width: 100%;
+            overflow: hidden;
+        }
+
+    .contact{
+        text-align: center;
+    }
+
+    .info-contact{
+        text-align: center;
+    }
+
+    footer{
+        text-align: center;
+    }
+       
+    .center-contact{
+        align-self: center;
+    }
+
+    .about-me .cv{
+        width: 80%;
+        margin: auto;
+    }
+
+    form button{
+        width: 50%;
+        margin: auto;
+        
+    }
+ 
+    }
+
+    @media screen and (max-width:462px){
+        .button-filter{
+            display: flex;
+            flex-direction: column;
+           
+        }
+        .button-filter button{
+            margin: 2% 0;
+        }
+
+        form button{
+            width: 100%;
+            margin: auto;
+            
+        }
+     
+    }
+    
+    
