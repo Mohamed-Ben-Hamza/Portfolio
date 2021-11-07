@@ -1,0 +1,411 @@
+/* declare font */
+@font-face{
+    font-family: Bodega Sans;
+    src: url(../fonts/BodegaSans_Black.ttf)
+}
+
+/* déclare font */
+
+
+
+/* general */
+
+body{
+ 
+    
+    background:linear-gradient(to bottom, rgba(49, 49, 49, 0.8), rgba(20, 20, 20, 0.8)) , url(../img/bg_body.svg)
+}
+
+html{
+    font-size:62.5%;   
+}
+nav , h1, h2,h3{
+    font-family: Bodega Sans;
+}
+span{
+    color: #ff9d01;
+}
+
+h3{
+    color: #ff9d01;
+}
+
+hr{
+    
+   background: #ff9d01;
+    border:1px solid  #ff9d01 ; 
+}
+
+
+main,.nav-inline {
+
+    margin: auto;
+    max-width: 1500px;
+}
+
+/* fin general */
+
+
+
+
+
+/* header */
+
+header {
+/* 
+    background: -moz-linear-gradient(-45deg, #ffffff 0%, #ffffff 50%, #000000 50%, #000000 100%); FF3.6-15 */
+    /* background: -webkit-linear-gradient(-45deg, #ffffff 0%,#ffffff 50%,#000000 50%,#000000 100%); Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #ffffff 0%,#ffffff 50%,#333333 50%,#333333 100%); 
+}
+
+header nav {
+    margin-right: 5%;
+   float: right;
+}
+header nav a {
+    text-transform: capitalize;
+    color: #ffffff;
+    padding: 8% 0;
+    text-decoration: none;
+    display: block;
+}
+
+nav,h3{
+    font-size: 2.5rem;
+}
+
+
+h1{
+    margin: 4% 0;
+    color: #ffffff;
+    text-align: center;
+    font-size: 4rem
+}
+h2{padding: 1.5%;
+    text-transform: uppercase;
+    color: white;
+    border-top:2px solid rgb(56, 56, 56);
+    
+    border-left:2px solid rgb(59, 59, 59);
+    font-size: 3rem
+}
+
+
+
+
+/* fin header */
+
+
+
+/* main */
+
+.card {
+    
+    padding: 2.5% 1%;
+    background: #ffffff;
+    display: inline-block;
+    vertical-align: top;
+    width: 22%;
+    box-sizing: border-box;
+    border: 0;
+}
+
+.card img{
+  width: 70%;
+  display: block;
+    margin: auto;
+}
+
+.card:nth-child(2),.card:nth-child(3), .card:nth-child(4){
+  margin-right: 4%
+}
+
+
+main article a {
+    text-decoration: none;
+    width: 70%;
+    display: block;
+    margin: 3% auto;
+    padding: 5%;
+    color: #ffffff;
+    text-align: center;
+    background: #ff9d01;
+}
+
+
+main article p {
+    text-align: center;
+    line-height: 2;
+    color: #788792;
+}
+
+
+
+
+
+#sec-two article{
+    vertical-align: top;
+    display: inline-block;
+    width: 50%;
+    padding: 2%;
+    box-sizing: border-box
+}
+#vid{
+
+    width: 100%;
+}
+
+#sec-two article p {
+    font-size: 1.2rem;
+    line-height: 2;
+    color: #ffffff;
+}
+
+
+
+.icons i{
+    color: white;
+    font-size: 3.5rem;
+    margin: 3% 6%;
+    
+
+
+}
+
+/* fin main  */
+
+
+
+
+
+
+/* footer */
+
+#box-sh{
+    margin-top: 5%;
+    border: 2px solid rgba(64,64,64,255);
+    background: #272727;
+    box-shadow: 0 -2px 15px; 
+}
+
+.footer-one h3{
+    text-align: center;
+    color: #ffffff;
+}
+
+.footer-one p{
+    margin: 2% 4%;
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 2;
+    color: #ffffff;
+}
+
+.footer-nav{
+    text-align: center;
+    
+}
+.footer-nav a {
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    margin: 2% 3%;
+    color: white;
+}
+/* fin footer */
+
+.footer-two{
+    color:#9c9c9c ;
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 1.70;
+}
+
+.footer-two a {
+    font-size: 1.1rem;
+    color: #9c9c9c ;
+}
+
+
+.footer-two img{
+    width: 8%; 
+    margin: 2% auto; 
+    display: block;
+}
+
+
+/* tablette */
+
+@media screen and (min-width:768px) and (max-width:1023px){
+    
+    body{
+       
+        margin: auto;
+    }
+
+    header{
+  
+       
+        width: 90%;
+        margin: auto;
+    }
+
+    header div img {
+        margin-left: 5%;
+    }
+
+    header nav {
+        margin-right: 5%;
+    }
+
+    .flexslider:first-child{
+        margin: auto;
+        width: 80%;
+    }
+
+    h2{ width: 80%;
+        margin:  5%  auto;
+        padding: 1.5%;
+        text-transform: uppercase;
+        color: white;
+        border-top:2px solid rgb(56, 56, 56);
+        
+        border-left:2px solid rgb(59, 59, 59);
+        font-size: 3rem
+    }
+    
+    
+.card:nth-child(2),.card:nth-child(3), .card:nth-child(4){
+    margin-right: 10%
+  }
+    
+.card {
+    width: 80%;
+    
+    background: #ffffff;
+    display: block;
+    
+    
+    margin: 2%  auto;
+    border: 0;
+}
+
+
+.icons i {
+    text-align: center;
+    display: block;
+}
+
+
+#sec-two article{
+    width: 90%;
+    margin: auto;
+    display: block;
+}
+h3{
+    text-align: center;
+    font-size: 4rem;
+}
+
+
+footer{
+    padding: 2%;
+    background: rgba(90, 90, 90, 0.3);
+   margin: 2% auto;
+    width: 80%;
+}
+
+
+
+}
+
+@media screen and (max-width: 767px){
+    body{
+        width: 80%;
+        margin: auto;
+    }
+    header {
+        background: linear-gradient(150deg, #ffffff 0%,#ffffff 50%,#000000 50%,#000000 100%); 
+        height: 80vh;
+    }
+   
+
+    header div img  {
+  
+        margin:  -20% 2% ;
+        
+    }
+    header nav {
+        margin-top :18%;
+        margin-right:3%; 
+    }
+    
+
+    header nav a{
+        margin: 20% 0;
+       width: 100%;
+        display: block;
+        
+    }
+    .card {
+        text-align: center;
+        padding: 1.5%;
+        background: #ffffff;
+        display: block;
+        width: 80%;
+        
+        margin: 2%  auto;
+        border: 0;
+    }
+    .icons i {
+        text-align: center;
+        display: block;
+    }
+    i{  display: block;
+    
+        color: white;
+        font-size: 3.5rem;
+      
+        widows: 80%;
+    
+    
+    }
+    #sec-two article{
+        width: 90%;
+        margin: auto;
+       
+    }
+
+    .card:nth-child(2),.card:nth-child(3), .card:nth-child(4){
+        margin-right: 10%
+      }
+
+    footer{
+        padding: 2%;
+        background: rgba(90, 90, 90, 0.3);
+       margin: 2% auto;
+        width: 80%;
+    }
+
+    
+    
+
+    .footer-nav a:nth-child(1),  .footer-nav a:nth-child(2){
+        display: inline-block;
+        vertical-align: top;
+        width: 35%;
+    }
+
+    
+    .footer-nav a:nth-child(3),  .footer-nav a:nth-child(4){
+        display: inline-block;
+        vertical-align: top;
+        width: 40%;
+    }
+
+    #box-sh{
+        display: none;
+    }
+    
+}
+
+
